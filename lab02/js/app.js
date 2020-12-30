@@ -1,172 +1,190 @@
 'use strict'
 
 var name = prompt("What is your name ?");
+function winter() {
+    var winter = prompt("do you like winter (yes/y - no/n)")
+    var winterLc = winter.toLowerCase();
+    function winterLc() {
+        switch (winterLc) {
+            case "yes ":
+            case "y":
+                console.log(winterLc)
+                alert("I dont like it")
+                break;
 
-var winter = prompt("do you like winter (yes/y - no/n)")
-var winterLc = winter.toLowerCase();
+            case "no":
+            case "n":
+                console.log(winterLc)
+                alert("Me to I dont like it")
+                break;
 
-switch (winterLc) {
-    case "yes ":
-    case "y":
-        console.log(winterLc)
-        alert("I dont like it")
-        break;
+            default:
+                alert("pick from the fowlloing (yes/y - no/n) ")
+                break;
+        }
+    }
+}
+function black() {
+    var black = prompt("do you like black color (yes/y - no/n)")
+    var blackLc = black.toLowerCase();
 
-    case "no":
-    case "n":
-        console.log(winterLc)
-        alert("Me to I dont like it")
-        break;
+    switch (blackLc) {
+        case "yes ":
+        case "y":
+            console.log(blackLc)
+            alert("its my fav color")
+            break;
 
-    default:
-        alert("pick from the fowlloing (yes/y - no/n) ")
-        break;
+        case "no":
+        case "n":
+            console.log(blackLc)
+            alert("its ok")
+            break;
+
+        default:
+            alert("pick from the fowlloing (yes/y - no/n) ")
+            break;
+    }
 }
 
-var black = prompt("do you like black color (yes/y - no/n)")
-var blackLc = black.toLowerCase();
+function cats() {
+    var cats = prompt("do you like Cats (yes/y - no/n)")
+    var catsLc = winter.toLowerCase();
 
-switch (blackLc) {
-    case "yes ":
-    case "y":
-        console.log(blackLc)
-        alert("its my fav color")
-        break;
+    switch (catsLc) {
+        case "yes ":
+        case "y":
+            console.log(catsLc)
+            alert("I like them to")
+            break;
 
-    case "no":
-    case "n":
-        console.log(blackLc)
-        alert("its ok")
-        break;
+        case "no":
+        case "n":
+            console.log(catsLc)
+            alert("why!!")
+            break;
 
-    default:
-        alert("pick from the fowlloing (yes/y - no/n) ")
-        break;
+        default:
+            alert("pick from the fowlloing (yes/y - no/n) ")
+            break;
+    }
 }
 
-var cats = prompt("do you like Cats (yes/y - no/n)")
-var catsLc = winter.toLowerCase();
+function games() {
+    var games = prompt("do you like videogames (yes/y - no/n)")
+    var gamesLc = winter.toLowerCase();
 
-switch (catsLc) {
-    case "yes ":
-    case "y":
-        console.log(catsLc)
-        alert("I like them to")
-        break;
+    switch (gamesLc) {
+        case "yes ":
+        case "y":
+            console.log(gamesLc)
+            alert("Me to I like videogames")
+            break;
 
-    case "no":
-    case "n":
-        console.log(catsLc)
-        alert("why!!")
-        break;
+        case "no":
+        case "n":
+            console.log(gamesLc)
+            alert("ok")
+            break;
 
-    default:
-        alert("pick from the fowlloing (yes/y - no/n) ")
-        break;
+        default:
+            alert("pick from the fowlloing (yes/y - no/n) ")
+            break;
+    }
+}
+function chocolate() {
+    var chocolate = prompt("do you like chocolate (yes/y - no/n)")
+    var chocolateLc = chocolate.toLowerCase();
+
+    switch (chocolateLc) {
+        case "yes ":
+        case "y":
+            console.log(chocolateLc)
+            alert("Me to I love it")
+            break;
+
+        case "no":
+        case "n":
+            console.log(chocolateLc)
+            alert("NO, bad for you")
+            break;
+
+        default:
+            alert("pick from the fowlloing (yes/y - no/n) ")
+            break;
+    }
 }
 
-var games = prompt("do you like videogames (yes/y - no/n)")
-var gamesLc = winter.toLowerCase();
+function chances() {
+    var chances = 0;
 
-switch (gamesLc) {
-    case "yes ":
-    case "y":
-        console.log(gamesLc)
-        alert("Me to I like videogames")
-        break;
+    for (var i = 0; i < 4; i++) {
 
-    case "no":
-    case "n":
-        console.log(gamesLc)
-        alert("ok")
-        break;
+        var number = prompt("I was born in (year)? ")
+        var numberInt = parseInt(number);
+        console.log(numberInt);
 
-    default:
-        alert("pick from the fowlloing (yes/y - no/n) ")
-        break;
+        chances++;
+        if (numberInt === 1995) {
+            alert("that's correct")
+            i = 10;
+
+        }
+        else if (numberInt < 1995) {
+            alert("too low")
+
+        }
+        else if (numberInt > 1995) {
+            alert("too high")
+
+        }
+
+
+    }
+
+
+    if (chances < 4) {
+        alert("Great Job! you have done it " + chances + "/4")
+    }
+    else {
+        alert("you have take all of your chances 4/4 the correct answer is '1995'")
+    }
+}
+function attempts() {
+    var attempts = 0;
+
+    for (var i = 0; i < 7; i++) {
+        attempts++;
+        var colorInput = prompt("Name one of my favorite colors ?")
+        var colors = ["black", "white", "gray", "silver", "brown", "yallow", "pink", "red", "blue", "green"];
+
+        console.log(colors + colorInput)
+        for (var ii = 0; ii < 10; ii++) {
+
+
+
+            if (colorInput == colors[ii]) {
+                alert("yes " + i + "/6")
+                ii = 12;
+                i = 12;
+            }
+
+        }
+        {
+            if (i < 7) {
+                alert("no " + i + "/6")
+            } else {
+                alert("you have done it ! " + attempts + "/6" + ' the correct answers are --> black, white, gray, silver, brown, yallow, pink, red, blue, green')
+            }
+        }
+    }
 }
 
-var chocolate = prompt("do you like chocolate (yes/y - no/n)")
-var chocolateLc = chocolate.toLowerCase();
-
-switch (chocolateLc) {
-    case "yes ":
-    case "y":
-        console.log(chocolateLc)
-        alert("Me to I love it")
-        break;
-
-    case "no":
-    case "n":
-        console.log(chocolateLc)
-        alert("NO, bad for you")
-        break;
-
-    default:
-        alert("pick from the fowlloing (yes/y - no/n) ")
-        break;
-}
-
-
+winter();
+black();
+cats();
+games();
+chocolate();
+chances();
+attempts();
 alert("Welcome " + name);
-var chances=0;
-
-for (var i = 0; i < 4; i++) {
-
-    var number = prompt("I was born in (year)? ")
-    var numberInt = parseInt(number);
-    console.log(numberInt);
-
-    chances++;
-    if (numberInt === 1995) {
-        alert("that's correct")
-        i = 10;
-
-    }
-    else if (numberInt < 1995) {
-        alert("too low")
-
-    }
-    else if (numberInt > 1995) {
-        alert("too high")
-
-    }
-
-
-}
-
-
-if(chances<4){
-    alert("Great Job! you have done it "+chances+"/4")
-}
-else{
-    alert("you have take all of your chances 4/4 the correct answer is '1995'")
-}
-
-var attempts = 0;
-
-for(var i=0;i<7;i++){
-    attempts++;
-var colorInput = prompt("Name one of my favorite colors ?")
-var colors = ["black", "white", "gray", "silver", "brown", "yallow", "pink", "red", "blue", "green"];
-
-console.log(colors+colorInput)
-for (var ii=0; ii < 10; ii++) {
-
-
-    
-    if (colorInput == colors[ii]) {
-        alert("yes "+i+"/6")
-        ii=12;
-        i=12;
-    }
-    
-}
- {
-     if(i<7){
-    alert("no "+i+"/6")
-     }else{
-        alert("you have done it ! "+attempts+"/6"+' the correct answers are --> black, white, gray, silver, brown, yallow, pink, red, blue, green')
-     }
-}
-}
