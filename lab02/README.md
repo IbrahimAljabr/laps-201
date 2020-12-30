@@ -13,7 +13,7 @@
 
 # lab04
 
-* Driver:Ibrahim aljabr [marge requests](https://github.com/gamer-planet/lab02/tree/Ibrahim-driver-lab02)
-* navigator:Esraa Abu Hana [marge requests](https://github.com/gamer-planet/laps-201)
+* Driver:Ibrahim aljabr [marge requests](https://github.com/EsraaAbuHana/lab02/pull/1)
+* navigator:Esraa Abu Hana [marge requests](https://github.com/gamer-planet/laps-201/pull/1)
 
 * Change all the questions to function
